@@ -8,7 +8,8 @@
 
 /* Estilos formulario de inicio de sesión */
 
-.login {
+.login,
+.form-container {
 
     width: 50%;
     margin: 0 auto;
@@ -23,7 +24,7 @@
 
 }
 
-.login .form-card {
+.form-card {
 
     display: flex;
     flex-direction: column;
@@ -69,3 +70,5 @@
     height: 100%;
 
 }
+
+/* Formulario de registro de gasto*/

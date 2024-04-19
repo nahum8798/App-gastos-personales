@@ -50,6 +50,6 @@ const login = (username, password) => {
 
 /* Menu */
 
-nuevoGastoBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
+nuevoGastoBtn.addEventListener('click',()=>{window.location.href = 'nuevo_gasto.html';});
 historialBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
 estadisticasBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
