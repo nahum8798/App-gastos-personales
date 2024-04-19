@@ -9,6 +9,12 @@ const nuevoGastoBtn = document.getElementById('nuevo-gasto');
 const historialBtn = document.getElementById('historial');
 const estadisticasBtn = document.getElementById('estadisticas');
 
+const gastosForm = document.getElementById('expense-form');
+const amount = parseFloat(document.getElementById('amount').value);
+const category = document.getElementById('category').value;
+const description = document.getElementById('description').value;
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault(); /* Prevenir el envío del formulario */
 
@@ -53,3 +59,24 @@ const login = (username, password) => {
 nuevoGastoBtn.addEventListener('click',()=>{window.location.href = 'nuevo_gasto.html';});
 historialBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
 estadisticasBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
+
+/* Formulario de carga de gastos */
+
+gastosForm.addEventListener('submit',(e)=>{
+
+    e.preventDefault();
+
+    // Validar datos ingresados
+
+    if (isNaN(amount) || amount <= 0) {
+        alert('Por favor, ingresa una cantidad valida');
+        return
+    }
+
+    if (category === ''){
+
+        alert('Por favor, selecciona una categoria');
+        return
+    }
+
+})
