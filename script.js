@@ -5,7 +5,9 @@ const username = document.getElementById('username');
 const password = document.getElementById('password');
 const userWrong = document.getElementById('hidden-username');
 const passWrong = document.getElementById('hidden-password');
-
+const nuevoGastoBtn = document.getElementById('nuevo-gasto');
+const historialBtn = document.getElementById('historial');
+const estadisticasBtn = document.getElementById('estadisticas');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault(); /* Prevenir el envío del formulario */
@@ -45,3 +47,9 @@ const login = (username, password) => {
         }
     }
 };
+
+/* Menu */
+
+nuevoGastoBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
+historialBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
+estadisticasBtn.addEventListener('click',()=>{window.location.href = 'pagina_principal.html';});
